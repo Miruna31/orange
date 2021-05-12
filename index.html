@@ -12,7 +12,10 @@
 
     <script src="bundles/jquery/jquery-3.6.0.js"></script>
     <link rel="stylesheet" type="text/css" href="bundles/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="resources/main.css">
+    <link href="bundles/font-awesome/css/all.css" rel="stylesheet">
 
 </head>
 
@@ -77,8 +80,12 @@
                 </div>
             </div>
 
-            <div class="blue-widget">105 canale
-                <div>din care 25 HD incluse</div>
+            <div class="blue-widget">
+                <div class="blue-widget-text">
+                    <div>105 canale</div>
+                    <div>din care 25 HD incluse</div>
+                </div>
+                <div class="hidden" id="close-icon"><i class="fas fa-times-circle"></i></div>
             </div>
         </section>
 
@@ -86,15 +93,56 @@
             <div class="discover">
                 <div class="title">Descopera canalele incluse</div>
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown button
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                    <label for="channels"></label>
+                    <select id="channels">
+                    <option value="canale-hd">Canale HD</option>
+                    <option value="stiri">Stiri</option>
+                    <option value="toate-canalele">Toate canalele</option>
+                    </select>
+                </div>
+                <div class="carousel">
+                    <div class="slick selected" data-target="hd">
+                        <div><img src="assets/rock.png"  alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
+                        <div><img src="assets/rock.png" alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
+                        <div><img src="assets/rock.png" alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
+                        <div><img src="assets/rock.png" alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
+                        <div><img src="assets/rock.png" alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
+                        <div><img src="assets/rock.png" alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
                     </div>
-                  </div>
+
+                    <div class="slick" data-target="stiri">
+                        <div><img src="assets/rock.png"  alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
+                        <div><img src="assets/rock.png" alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
+                        <div><img src="assets/rock.png" alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
+                        <div><img src="assets/rock.png" alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
+                        <div><img src="assets/rock.png" alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
+                        <div><img src="assets/rock.png" alt="rock"></div>
+                        <div><img src="assets/wild.png" alt="wild"></div>
+                        <div><img src="assets/utv-hd.png" alt="utv"></div>
+                    </div>
+                </div>
 
             </div>
 
@@ -198,14 +246,13 @@
                 
             </div>
         </section>
-
-
     </div>
 
 
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
     <script src="bundles/bootstrap/js/bootstrap.js"></script>
     <script src="resources/main.js"></script>
 

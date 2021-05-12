@@ -36,7 +36,7 @@ header p{
 
 .subscription{
     width: 400px;
-    height: 450px;
+    height: 460px;
     padding-top: 35px;
     padding-left: 27px;
     background-color: white;
@@ -118,6 +118,8 @@ span{
 }
 
 .blue-widget{
+    display: flex;
+    justify-content: space-between;
     background-color: #4cb4e4;
     color: white;
     width: 220px;
@@ -130,11 +132,16 @@ span{
     padding-top: 35px;
     padding-left: 30px;
     font-size: 25px;
-    font-weight: 600
+    font-weight: 600;
+    cursor: pointer;
 }
 
-.blue-widget div{
+.blue-widget-text div:nth-child(2){
     font-size: 13px;
+}
+
+i{
+    margin-right: 20px;
 }
 
 #container {
@@ -153,6 +160,30 @@ span{
     height: 400px;
     padding-top: 30px;
     padding-left: 20px;
+}
+
+#channels{
+    border: none;
+    margin-bottom: 20px;
+}
+
+.carousel{
+    width: 90%;
+}
+
+.slick{
+    display: flex;
+}
+
+.slick img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    background-color: rgb(224, 220, 220);
+    height: 60px;
+    width: 80px;
+    padding: 5px;
 }
 
 .title{
@@ -252,4 +283,8 @@ height: 250px;
     font-weight: 600;
     display: flex;
     align-items: center;
+}
+
+.hidden{
+    display: none;
 }
