@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    background-color:rgb(224, 220, 220);
+    min-height: 100%;
+    padding-left: 50px;
+    font-family: sans-serif;
+}
+
+h1{
+    color: #ff7c04;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+header p{
+    margin: 0;
+}
+
+.subscriptions{
+    margin-top: 35px;
+    display: flex;
+}
+
+.subscription{
+    width: 400px;
+    height: 450px;
+    padding-top: 35px;
+    padding-left: 27px;
+    background-color: white;
+    margin-right: 40px;
+}
+
+.type{
+    color: rgb(110, 107, 107);
+    font-size: 11px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.type div{
+    color: #ff7c04;
+    font-size: 25px;
+}
+
+.channel{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.channel div{
+    font-size: 13px;
+}
+
+ul {
+    list-style: none;
+    color: rgb(110, 107, 107);
+    font-size: 13px;
+    padding: 0px;
+}
+
+li{
+    padding-bottom: 8px;
+}
+  
+li::before {
+    content: "• ";
+    color:#ff7c04;
+}
+
+span{
+    color: #ff7c04;
+}
+
+.price{
+    color: #ff7c04 ;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.price div{
+    color: rgb(110, 107, 107);
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.see{
+    width: 350px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color:#ff7c04 ;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.description{
+    font-size: 13px;
+    color: rgb(110, 107, 107);
+    font-weight: 600;
+    width: 300px;
+}
+
+.blue-widget{
+    background-color: #4cb4e4;
+    color: white;
+    width: 220px;
+    height: 120px;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-top: 35px;
+    padding-left: 30px;
+    font-size: 25px;
+    font-weight: 600
+}
+
+.blue-widget div{
+    font-size: 13px;
+}
+
+#container {
+    padding: 5% 0%;
+}
+
+.diag { 
+    background-color: rgb(224, 220, 220);
+    background-image: -webkit-linear-gradient(110deg, black 50%, rgb(224, 220, 220)50%);
+    min-height: 580px;
+}
+
+.discover{
+    background-color: white;
+    width: 92%;
+    height: 400px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.bottom-details{
+    display: flex;
+
+}
+
+.text{
+    color: white;
+}
+
+.extra-option{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.tutorials{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 6px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: orange;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity 0.6s ease;
+    border-radius: 50%;
+}
+
+.carousel-inner img{
+width: 300px;
+height: 250px;
+}
+
+.x{
+    width: 700px;
+    height: 250px;
+    background-color: white;
+}
+
+.black-section{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+.black-section img{
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.cards{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.TV-descript{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.TV-descript div{
+    font-weight: normal;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.faq{
+    padding: 30px;
+}
+
+.question{
+    background-color: white;
+    height: fit-content;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
